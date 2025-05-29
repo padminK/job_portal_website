@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Job Portal</h1>
+    <p class="lead">Find your dream job or post job openings for talented candidates.</p>
+    <hr class="my-4">
+    <p>Join our platform to connect employers with job seekers.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('auth.register') }}" role="button">Get Started</a>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-6">
+        <h3>For Job Seekers</h3>
+        <p>Browse through thousands of job opportunities and apply with ease.</p>
+        <a href="{{ url_for('auth.register') }}" class="btn btn-outline-primary">Find Jobs</a>
+    </div>
+    <div class="col-md-6">
+        <h3>For Employers</h3>
+        <p>Post job openings and find the perfect candidates for your company.</p>
+        <a href="{{ url_for('auth.register') }}" class="btn btn-outline-success">Post Jobs</a>
+    </div>
+</div>
+{% endblock %}
